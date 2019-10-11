@@ -12,9 +12,9 @@
 
  ***********************************************/
 
-#define LED1 12   //PIN 12 to drive the led
-#define LED2 11   //PIN 10 to drive the led
-#define LED3 13   //PIN 13 to drive the led
+#define LED1 10   //PIN 10 to drive the led
+#define LED2 11   //PIN 11 to drive the led
+#define DELAY 20 //20ms delay in each loop
 #define DELAY 40 //40ms delay in each loop
 #define MIN_PWM_VALUE 0 //minimum pwm value
 #define MAX_PWM_VALUE 255 //max pwm value
@@ -29,7 +29,7 @@ void setup() {
 }
 
 void loop() {
-  for(var i = 0; i<255; i++){
+  for(var i = MIN_PWM_VALUE; i<MAX_PWM_VALUE; i++){
     analogWrite(LED1; i);
     digitalWrite(LED2, state);    //Turning ON the 2nd LED.
     delay(DELAY);
