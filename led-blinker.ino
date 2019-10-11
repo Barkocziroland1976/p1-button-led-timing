@@ -28,8 +28,16 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(LED1, state);   //Turning OFF the 1st LED.
-  digitalWrite(LED2, !state);    //Turning ON the 2nd LED.
-  delay(DELAY);         //Waiting 500 ms.
+  for(var i = 0; i<255; i++){
+    analogWrite(LED1; i);
+    digitalWrite(LED2, state);    //Turning ON the 2nd LED.
+    delay(DELAY);
+  }
+  state = !state;
+  for(var i = 255; i>0; i--){
+    analogWrite(LED1; i);
+    digitalWrite(LED2, state);    //Turning ON the 2nd LED.
+    delay(DELAY);
+  }
   state = !state;
 }
