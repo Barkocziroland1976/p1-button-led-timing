@@ -12,7 +12,7 @@
 
  ***********************************************/
 
-#define LED1 10   //PIN 10 to drive the led
+#define LED1 12   //PIN 12 to drive the led
 #define LED2 11   //PIN 10 to drive the led
 #define DELAY 500 //50ms delay in each loop
 #define MIN_PWM_VALUE 0 //minimum pwm value
