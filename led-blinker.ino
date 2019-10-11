@@ -14,7 +14,8 @@
 
 #define LED1 12   //PIN 12 to drive the led
 #define LED2 11   //PIN 10 to drive the led
-#define DELAY 10 //10ms delay in each loop
+#define LED3 13   //PIN 13 to drive the led
+#define DELAY 40 //40ms delay in each loop
 #define MIN_PWM_VALUE 0 //minimum pwm value
 #define MAX_PWM_VALUE 255 //max pwm value
 /**
