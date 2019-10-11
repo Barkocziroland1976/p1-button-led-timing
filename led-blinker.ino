@@ -28,7 +28,7 @@ void setup() {
 }
 
 void loop() {
-  for(var i = 0; i<255; i++){
+  for(var i = MIN_PWM_VALUE; i<MAX_PWM_VALUE; i++){
     analogWrite(LED1; i);
     digitalWrite(LED2, state);    //Turning ON the 2nd LED.
     delay(DELAY);
